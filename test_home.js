@@ -6,7 +6,7 @@ window. addEventListener('DOMContentLoaded', (event) => {
         let ele=document.getElementById('table');
         let data = JSON.parse(localStorage.getItem("EmployeeList"));
         if(data != null || data != ""){
-            //alert(data);
+            alert(data);
         }
         let header = 
         `
@@ -60,7 +60,7 @@ window. addEventListener('DOMContentLoaded', (event) => {
     }
     const update = (name)=>{
         localStorage.setItem("update",name);
-        //window.open("new_payroll_form_js.html");
+        window.open("new_payroll_form_js.html");
         window.location = 'new_payroll_form_js.html' ;
     }
     const createInnerHtml = () => {
