@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <input type="radio" id="profile1" name="ashok" class="pointer"
+                       value="icon.png" required>
+                <img src="images/profile1.png" class="profile pointer" id="image1">
+    <button id="hit">Click</button>
+    <script defer>
+        document.querySelector("#hit").addEventListener('click',()=>{
+            let element= document.querySelector('[name=ashok]');
+        var dataInIt = (element.checked);
+        alert(dataInIt);
+        });
+    </script>
+</body>
+</html>
